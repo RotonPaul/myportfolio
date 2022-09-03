@@ -1,0 +1,67 @@
+ /* X-Small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (max-width: 576px) {
+     #banner {
+         height: 600px;
+     }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {}
+
+ /* Large devices (desktops, 992px and up) */
+ @media (max-width: 992px) {
+     .navbar .menu_bar {
+         position: fixed;
+         top: 70px;
+         left: -100%;
+         width: 100%;
+         background-color: #f1f1f1;
+
+         text-align: center;
+         transition: linear 0.5s;
+     }
+
+     .menu_bar a {
+         color: black;
+     }
+
+     .navbar .menu_bar.active {
+         left: 0;
+     }
+
+     .banner_text {
+         text-align: center;
+     }
+
+     .menu_bg ul li a::before,
+     .menu_bg ul li a::after {
+         display: none;
+     }
+
+     #banner {
+         height: 600px;
+     }
+
+     .skill_text {
+         padding: 0px 20px;
+     }
+
+     .skill_text h3 {
+         font-size: 24px;
+     }
+
+     .skill_text p {
+         font-size: 17px;
+     }
+
+     .experience_items h3 {
+         font-size: 20px;
+     }
+ }
+
+ @media (min-width: 1200px) {}
+
+ @media (min-width: 1400px) {}
